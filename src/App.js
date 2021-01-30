@@ -7,6 +7,7 @@ function App() {
 
   const addTodo = (event) => {
     //this will fire up when we click the button
+    setTodos([...todos, input]);
   }
   return (
     <div className="App">
