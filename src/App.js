@@ -15,7 +15,7 @@ function App() {
     db.collection('todos').orderBy('timestamp', 'desc').onSnapshot(snapshot => {
       setTodos(snapshot.docs.map(doc => doc.data().todo))
     })
-  }, [input]);
+  }, []);
 
 
   const addTodo = (event) => {
